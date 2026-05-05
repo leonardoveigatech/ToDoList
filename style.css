@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.divContainer {
+    height: 70vh;
+    width: 70%;
+    padding: 20px 50px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: rgba(231, 209, 6, 0.753);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+}
+
+.divRow {
+    display: flex;
+    gap: 3em;
+    width: 70%;
+}
+
+ul {
+    overflow-y: scroll;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(72, 126, 126, 0.74);
+    color: #8F5204;
+}
+
+textarea::placeholder {
+    color: #8F5204;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    background-color: rgba(165, 42, 42, 0.856);
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+
+li span {
+    flex: 1;
+    flex-wrap: wrap;
+    word-break: break-word;
+}
+
+li button {
+    width: auto;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Adicionar {
+    padding: 16px 50px;
+    cursor: pointer;
+    width: 60%;
+    border: none;
+    border-radius: 20px;
+    background: rgb(177, 87, 2);
+    transition: all 0.5s;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.Adicionar:hover {
+    opacity: 1;
+    background-color: rgba(165, 42, 42, 0.849);
+}
